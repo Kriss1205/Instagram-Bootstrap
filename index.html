@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <title>Instagram-Bootstrap</title>
+  </head>
+  <body>
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="fab fa-instagram"></i>Instagram</a>
+        <div class="d-flex">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Creat a new post
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Creat a new post
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Caption:</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-cog"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          <i class="fas fa-th"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <i class="fas fa-square"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0"
+      >
+        Hello World
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0"
+      >
+        <div class="card" style="width: 50rem">
+          <h1>Valorant</h1>
+          <img
+            src="https://thumbs.gfycat.com/BitterDependableCalf-max-1mb.gif"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>217 Likes</strong>
+              <br />
+              Raze is always cheerful, impulsive, and spontaneous. She exudes
+              chaotic energy and destroys every obstacle in her path, generating
+              mayhem on the battlefield. She can be impatient and doesn't adhere
+              to plans. Raze's signature abilities are Blast Pack and Boom Bot,
+              both of which melt the opposing team.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>Coyote Swapped ST</h1>
+          <img
+            src="https://pitpad.com/wp-content/uploads/2021/02/21_focus_st_0016_header-1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>415 Likes</strong>
+              <br />
+              Jeremy Allison's 850whp Supercharged Coyote-Swapped RWD Focus ST
+              Is Unforgettable!
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>Miami Life</h1>
+          <img
+            src="https://www.flowee.cz/images/misa_2019/cerven/miami_1403677814.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>112 Likes</strong>
+              <br />
+              Miami's vibrant culture draws from a strong Latin American and
+              Caribbean influence, with nearly 70% of the population in the
+              county identifying as Hispanic or Latino. While English is still
+              the official language, since over half of Miamians speak Spanish,
+              brushing up before visiting or moving will serve you well!
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>Future Full Stack Dev.</h1>
+          <img
+            src="https://www.ius.edu/certificates/images/showcase-uc-coding-technology.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>352 Likes</strong>
+              <br />
+              Super happy to finally be learnig how to code with
+              <strong>@4GeeksAcademy</strong>!!!
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>Trail Hunters Miami</h1>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS92eLpfH--n7xxQ28eH7Q97o7dAyoMKmzMiOc41B5-1MwPZelL7N6HGC8-9eFVm8Z0Q4&usqp=CAU"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>937 Likes</strong>
+              <br />
+              Quit O'Reilly Auto Parts to work with one of the best off-roading
+              shops <strong>@TrailHuntersMiami</strong> where not only will I
+              now haave time to do school because I get out earlier but I also
+              get to learn how to weld, general mechanics, & customs jobs!!!!
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>The Hoonicorn</h1>
+          <img
+            src="https://thumbs.gfycat.com/BleakTenderBarb-size_restricted.gif"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>856 Likes</strong>
+              <br />
+              <strong>@KBlock43</strong> one of the top drifter's in the entire
+              world drifting anything from his custom 845HP all wheel drive 1965
+              Ford Mustang he calls the "Hoonicorn" to a stock car like the time
+              he tried to drift the Electric 4 door Ford Mustang before it was
+              even released because Ford let him test drive it.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>TBT to the 5.0</h1>
+          <img
+            src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.6435-9/82343478_583696812421316_6672510527907823616_n.jpg?stp=dst-jpg_p960x960&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RC6y6r3zjuMAX92h748&_nc_ht=scontent-mia3-2.xx&oh=00_AfAXzrexc4IAMqPWHyJXXrBgmmiutAFOBw9Y6WAeV3kRng&oe=638962BB"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>864 Likes</strong>
+              <br />
+              Little throw back to when I first got the 5.0 and i thought I
+              would have it forever...
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>GT vs ST</h1>
+          <img
+            src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.6435-9/121197739_779962402794755_8066836917837825895_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=1LItG0nVa1QAX_rDFIF&_nc_ht=scontent-mia3-2.xx&oh=00_AfApsLcZ2fZ8Og0XEG7owPw6p4vgWrvts1BRqRVVJRy-WQ&oe=63895858"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>749 Likes</strong>
+              <br />
+              Another throw back to the 5.0 sometimes miss it sometime glad I
+              moved onto the ST which is the car that got me into cars and
+              mechanics and is also the car I learned to drive manual in.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 50rem">
+          <h1>Quinceañera w/ Wiffie</h1>
+          <img
+            src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.6435-9/42158387_298063620984638_1301510742935076864_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4qoE9z68dSUAX_uHR07&_nc_ht=scontent-mia3-2.xx&oh=00_AfBx3vy6YwGAY5Qhz7BpQ6bxdVmwX1DaKdK8IPGEFrbD8Q&oe=6389422B"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <strong>421 Likes</strong>
+              <br />
+              Me and the baby-momma a little over 4yrs ago when she was only
+              like 2 months pregnant with William at my sisters quinceañera
+            </p>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
